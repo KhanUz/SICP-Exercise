@@ -7,7 +7,7 @@
 )
 
 (define (valid? guess x) 
-    (<  (   abs (- (square guess) x))0.001)
+    (<  (   abs (- (square guess) x)) 0.001)
 )
 
 (define (modded guess x)(
