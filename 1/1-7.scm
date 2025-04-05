@@ -18,7 +18,7 @@
 
 (define (sqrt x) (sqrtEr x 1.0))
 
-(display (sqrt 0.00004))
+(display (sqrt 0.00001))
 
 
 
