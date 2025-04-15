@@ -1,3 +1,4 @@
+#lang sicp 
 (define (pascal row col)
     (if (or (= col 0) (= col row)) 
         1
@@ -19,7 +20,7 @@
         )
 
 
-        (define (displayCol r)
+        (define (displayCol r)111
             (define (colIter n)
                 (display (pascal r n))
                 (display " ")

@@ -1,0 +1,15 @@
+#lang sicp 
+(define (smallestDivisor x)
+
+    (define (findDevisor num testNumber)
+        (cond   ((> (square testNumber) num) num)
+                ((divides? testNumber num) testNumber)
+                (else (findDevisor num (+ testNumber 1)))
+        )
+    )    
+    (define (divides? x y)(= (remainder y x) 0))
+    (findDevisor x 2)
+)
+(define (square x) (* x x))
+(display (smallestDivisor 19999    ))
+(newline)
