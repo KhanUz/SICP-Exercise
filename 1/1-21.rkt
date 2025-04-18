@@ -11,5 +11,5 @@
     (findDevisor x 2)
 )
 (define (square x) (* x x))
-(display (smallestDivisor 19999    ))
+(display (smallestDivisor 19999))
 (newline)
